@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 
+
+//Esta funcion es el componente Form que maneja la entrada de datos del usuario
+//Permite agregar o actualizar un item en la lista
 function Form({addOrUpdateItem, itemToEdit}){
     const [inputValue, setInputValue] = useState('');
 

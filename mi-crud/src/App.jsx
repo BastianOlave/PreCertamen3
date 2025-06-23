@@ -3,7 +3,10 @@ import Form from "./components/Form";
 import List from "./components/List";
 import "./App.css";
 
-function App(){
+
+// Esta es la función principal del componente App
+// Aquí se definen los estados necesarios para el CRUD
+function App(){   
   const [items, setItems] = useState([]);
   const [itemToEdit, setItemToEdit] = useState(null);
 
