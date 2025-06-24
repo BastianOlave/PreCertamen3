@@ -35,10 +35,14 @@ function App(){
     setItemToEdit(item);
   };
   return (
-    <div className="App">
-      <h1>CRUD con LocalStorage</h1>
-      <Form addOrUpdateItem={addOrUpdateItem} itemToEdit={itemToEdit} />
-      <List items={items} deleteItem={deleteItem} editItem={editItem} />
+    <div className="App-header">
+      <h1 className="titulo">Evaluación de Alumnos</h1>
+        <div className="App">
+          <Form addOrUpdateItem={addOrUpdateItem} itemToEdit={itemToEdit} />
+        </div>
+        <div className="App2">
+          <List items={items} deleteItem={deleteItem} editItem={editItem} />
+        </div>
     </div>
   );
 }
