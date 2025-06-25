@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+// Componente Form que maneja la creación y edición de evaluaciones
+// Recibe las propiedades addOrUpdateItem y itemToEdit
 function Form({ addOrUpdateItem, itemToEdit }) {
   const [formData, setFormData] = useState({
     nombre: '',

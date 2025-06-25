@@ -1,6 +1,8 @@
 import React from "react";
 import Item from "./Item";
 
+// Componente List que muestra la lista de evaluaciones
+// Recibe las propiedades items, deleteItem y editItem
 function List({ items, deleteItem, editItem }) {
   return (
     <div className="evaluaciones-box">

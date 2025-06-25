@@ -177,7 +177,6 @@ form button:hover {
   background-color: #2563eb;
 }
 
-/* Tabla de evaluaciones */
 table {
   width: 100%;
   border-collapse: collapse;
@@ -207,7 +206,6 @@ tr:last-child td {
   border-bottom: none;
 }
 
-/* Botones de acción */
 td button {
   margin: 0 5px;
   padding: 8px 14px;
@@ -236,7 +234,6 @@ td button:last-of-type:hover {
   background-color: #dc2626;
 }
 
-/* === Etiquetas de evaluación unificadas === */
 .etiqueta {
   display: inline-block;
   font-size: 0.75rem;

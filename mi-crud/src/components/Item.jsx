@@ -1,5 +1,7 @@
 import React from "react";
 
+// Componente Item que representa cada evaluación individual
+// Recibe las propiedades item, deleteItem y editItem
 function Item({ item, deleteItem, editItem }) {
   const { nombre, asignatura, promedio } = item.value;
 
@@ -17,17 +19,18 @@ function Item({ item, deleteItem, editItem }) {
         </div>
       </div>
 
+      {/* Mostrar etiqueta según el promedio */}
       {(() => {
         const nota = parseFloat(promedio);
 
         if (nota === 7) {
           return <span className="etiqueta destacado">Destacado</span>;
-        } else if (nota >= 6 && nota < 7) {
-          return <span className="etiqueta muy-bien">Muy bien</span>;
-        } else if (nota >= 4 && nota < 6) {
-          return <span className="etiqueta regular">Regular</span>;
+        } else if (nota >= 5.6 && nota < 7) {
+          return <span className="etiqueta muy-bien">Buen trabajo</span>;
+        } else if (nota >= 4 && nota < 5.6) {
+          return <span className="etiqueta regular">Con mejora</span>;
         } else if (nota >= 0 && nota < 4) {
-          return <span className="etiqueta reprobado">Reprobado</span>;
+          return <span className="etiqueta reprobado">Deficiente</span>;
         } else {
           return null;
         }
