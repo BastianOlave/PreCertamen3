@@ -29,7 +29,7 @@ function Item({ item, deleteItem, editItem }) {
           return <span className="etiqueta muy-bien">Buen trabajo</span>;
         } else if (nota >= 4 && nota < 5.6) {
           return <span className="etiqueta regular">Con mejora</span>;
-        } else if (nota >= 0 && nota < 4) {
+        } else if (nota >= 1 && nota < 4) {
           return <span className="etiqueta reprobado">Deficiente</span>;
         } else {
           return null;

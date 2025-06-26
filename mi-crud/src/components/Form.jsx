@@ -36,13 +36,13 @@ function Form({ addOrUpdateItem, itemToEdit }) {
       formData.nombre.trim() &&
       formData.asignatura.trim() &&
       !isNaN(promedioNum) &&
-      promedioNum >= 0 &&
+      promedioNum >= 1 &&
       promedioNum <= 7
     ) {
       addOrUpdateItem(formData);
       setFormData({ nombre: '', asignatura: '', promedio: '' });
     } else {
-      alert("Por favor, completa todos los campos y asegúrate de que el promedio esté entre 0 y 7.");
+      alert("Por favor, completa todos los campos y asegúrate de que el promedio esté entre 1 y 7.");
     }
   };
 
@@ -67,10 +67,10 @@ function Form({ addOrUpdateItem, itemToEdit }) {
         type="number"
         step="0.1"
         name="promedio"
-        placeholder="Promedio (0.0 - 7.0)"
+        placeholder="Promedio (1.0 - 7.0)"
         value={formData.promedio}
         onChange={handleChange}
-        min="0"
+        min="1"
         max="7"
       />
       <button type="submit">{itemToEdit ? 'Actualizar' : 'Agregar'}</button>
